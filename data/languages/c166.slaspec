@@ -12,73 +12,73 @@ define register offset=0xFC00 size=1
 	[ RL0 RH0 RL1 RH1 RL2 RH2 RL3 RH3 RL4 RH4 RL5 RH5 RL6 RH6 RL7 RH7 ];
 
 
-# special purpose registers 
+# special purpose registers
 define register offset=0xFE00 size=2
        [ DPP0    DPP1    DPP2    DPP3    CSP     sprfe0a MDH     MDL
-         CP      SP      STKOV   STKUN   CPUCON1 CPUCON2 sprfe1c sprfe1e 
-         sprfe20 sprfe22 sprfe24 sprfe26 sprfe28 sprfe2a sprfe2c sprfe2e 
-         sprfe30 sprfe32 sprfe34 sprfe36 sprfe38 sprfe3a sprfe3c sprfe3e 
-         sprfe40 sprfe42 sprfe44 sprfe46 sprfe48 sprfe4a sprfe4c sprfe4e 
-         sprfe50 sprfe52 sprfe54 sprfe56 sprfe58 sprfe5a sprfe5c sprfe5e 
-         sprfe60 sprfe62 sprfe64 sprfe66 sprfe68 sprfe6a sprfe6c sprfe6e 
-         sprfe70 sprfe72 sprfe74 sprfe76 sprfe78 sprfe7a sprfe7c sprfe7e 
-         sprfe80 sprfe82 sprfe84 sprfe86 sprfe88 sprfe8a sprfe8c sprfe8e 
-         sprfe90 sprfe92 sprfe94 sprfe96 sprfe98 sprfe9a sprfe9c sprfe9e 
-         sprfea0 sprfea2 sprfea4 sprfea6 sprfea8 sprfeaa sprfeac sprfeae 
-         sprfeb0 sprfeb2 sprfeb4 sprfeb6 sprfeb8 sprfeba sprfebc sprfebe 
-         sprfec0 sprfec2 sprfec4 sprfec6 sprfec8 sprfeca sprfecc sprfece 
-         sprfed0 sprfed2 sprfed4 sprfed6 sprfed8 sprfeda sprfedc sprfede 
-         sprfee0 sprfee2 sprfee4 sprfee6 sprfee8 sprfeea sprfeec sprfeee 
-         sprfef0 sprfef2 sprfef4 sprfef6 sprfef8 sprfefa sprfefc sprfefe 
-         sprff00 sprff02 sprff04 sprff06 sprff08 sprff0a sprff0c sprff0e 
-         PSW     sprff12 sprff14 sprff16 sprff18 sprff1a ZEROS   ONES 
-         sprff20 sprff22 sprff24 sprff26 sprff28 sprff2a sprff2c sprff2e 
-         sprff30 sprff32 sprff34 sprff36 sprff38 sprff3a sprff3c sprff3e 
-         sprff40 sprff42 sprff44 sprff46 sprff48 sprff4a sprff4c sprff4e 
-         sprff50 sprff52 sprff54 sprff56 sprff58 sprff5a sprff5c sprff5e 
-         sprff60 sprff62 sprff64 sprff66 sprff68 sprff6a sprff6c sprff6e 
-         sprff70 sprff72 sprff74 sprff76 sprff78 sprff7a sprff7c sprff7e 
-         sprff80 sprff82 sprff84 sprff86 sprff88 sprff8a sprff8c sprff8e 
-         sprff90 sprff92 sprff94 sprff96 sprff98 sprff9a sprff9c sprff9e 
-         sprffa0 sprffa2 sprffa4 sprffa6 sprffa8 sprffaa sprffac sprffae 
-         sprffb0 sprffb2 sprffb4 sprffb6 sprffb8 sprffba sprffbc sprffbe 
-         sprffc0 sprffc2 sprffc4 sprffc6 sprffc8 sprffca sprffcc sprffce 
-         sprffd0 sprffd2 sprffd4 sprffd6 sprffd8 sprffda sprffdc sprffde 
-         sprffe0 sprffe2 sprffe4 sprffe6 sprffe8 sprffea sprffec sprffee 
+         CP      SP      STKOV   STKUN   CPUCON1 CPUCON2 sprfe1c sprfe1e
+         sprfe20 sprfe22 sprfe24 sprfe26 sprfe28 sprfe2a sprfe2c sprfe2e
+         sprfe30 sprfe32 sprfe34 sprfe36 sprfe38 sprfe3a sprfe3c sprfe3e
+         sprfe40 sprfe42 sprfe44 sprfe46 sprfe48 sprfe4a sprfe4c sprfe4e
+         sprfe50 sprfe52 sprfe54 sprfe56 sprfe58 sprfe5a sprfe5c sprfe5e
+         sprfe60 sprfe62 sprfe64 sprfe66 sprfe68 sprfe6a sprfe6c sprfe6e
+         sprfe70 sprfe72 sprfe74 sprfe76 sprfe78 sprfe7a sprfe7c sprfe7e
+         sprfe80 sprfe82 sprfe84 sprfe86 sprfe88 sprfe8a sprfe8c sprfe8e
+         sprfe90 sprfe92 sprfe94 sprfe96 sprfe98 sprfe9a sprfe9c sprfe9e
+         sprfea0 sprfea2 sprfea4 sprfea6 sprfea8 sprfeaa sprfeac sprfeae
+         sprfeb0 sprfeb2 sprfeb4 sprfeb6 sprfeb8 sprfeba sprfebc sprfebe
+         sprfec0 sprfec2 sprfec4 sprfec6 sprfec8 sprfeca sprfecc sprfece
+         sprfed0 sprfed2 sprfed4 sprfed6 sprfed8 sprfeda sprfedc sprfede
+         sprfee0 sprfee2 sprfee4 sprfee6 sprfee8 sprfeea sprfeec sprfeee
+         sprfef0 sprfef2 sprfef4 sprfef6 sprfef8 sprfefa sprfefc sprfefe
+         sprff00 sprff02 sprff04 sprff06 sprff08 sprff0a sprff0c sprff0e
+         PSW     sprff12 sprff14 sprff16 sprff18 sprff1a ZEROS   ONES
+         sprff20 sprff22 sprff24 sprff26 sprff28 sprff2a sprff2c sprff2e
+         sprff30 sprff32 sprff34 sprff36 sprff38 sprff3a sprff3c sprff3e
+         sprff40 sprff42 sprff44 sprff46 sprff48 sprff4a sprff4c sprff4e
+         sprff50 sprff52 sprff54 sprff56 sprff58 sprff5a sprff5c sprff5e
+         sprff60 sprff62 sprff64 sprff66 sprff68 sprff6a sprff6c sprff6e
+         sprff70 sprff72 sprff74 sprff76 sprff78 sprff7a sprff7c sprff7e
+         sprff80 sprff82 sprff84 sprff86 sprff88 sprff8a sprff8c sprff8e
+         sprff90 sprff92 sprff94 sprff96 sprff98 sprff9a sprff9c sprff9e
+         sprffa0 sprffa2 sprffa4 sprffa6 sprffa8 sprffaa sprffac sprffae
+         sprffb0 sprffb2 sprffb4 sprffb6 sprffb8 sprffba sprffbc sprffbe
+         sprffc0 sprffc2 sprffc4 sprffc6 sprffc8 sprffca sprffcc sprffce
+         sprffd0 sprffd2 sprffd4 sprffd6 sprffd8 sprffda sprffdc sprffde
+         sprffe0 sprffe2 sprffe4 sprffe6 sprffe8 sprffea sprffec sprffee
          sprfff0 sprfff2 sprfff4 sprfff6 sprfff8 sprfffa sprfffc sprfffe ];
 
 define register offset=0xF000 size=2
-       [ esprf000 esprf002 esprf004 esprf006 esprf008 esprf00a esprf00c esprf00e 
-         esprf010 esprf012 esprf014 esprf016 esprf018 esprf01a esprf01c esprf01e 
-         esprf020 esprf022 esprf024 esprf026 esprf028 esprf02a esprf02c esprf02e 
-         esprf030 esprf032 esprf034 esprf036 esprf038 esprf03a esprf03c esprf03e 
-         esprf040 esprf042 esprf044 esprf046 esprf048 esprf04a esprf04c esprf04e 
-         esprf050 esprf052 esprf054 esprf056 esprf058 esprf05a esprf05c esprf05e 
-         esprf060 esprf062 esprf064 esprf066 esprf068 esprf06a esprf06c esprf06e 
-         esprf070 esprf072 esprf074 esprf076 esprf078 esprf07a esprf07c esprf07e 
-         esprf080 esprf082 esprf084 esprf086 esprf088 esprf08a esprf08c esprf08e 
-         esprf090 esprf092 esprf094 esprf096 esprf098 esprf09a esprf09c esprf09e 
-         esprf0a0 esprf0a2 esprf0a4 esprf0a6 esprf0a8 esprf0aa esprf0ac esprf0ae 
-         esprf0b0 esprf0b2 esprf0b4 esprf0b6 esprf0b8 esprf0ba esprf0bc esprf0be 
-         esprf0c0 esprf0c2 esprf0c4 esprf0c6 esprf0c8 esprf0ca esprf0cc esprf0ce 
-         esprf0d0 esprf0d2 esprf0d4 esprf0d6 esprf0d8 esprf0da esprf0dc esprf0de 
-         esprf0e0 esprf0e2 esprf0e4 esprf0e6 esprf0e8 esprf0ea esprf0ec esprf0ee 
-         esprf0f0 esprf0f2 esprf0f4 esprf0f6 esprf0f8 esprf0fa esprf0fc esprf0fe 
-         esprf100 esprf102 esprf104 esprf106 esprf108 esprf10a esprf10c esprf10e 
-         esprf110 esprf112 esprf114 esprf116 esprf118 esprf11a esprf11c esprf11e 
-         esprf120 esprf122 esprf124 esprf126 esprf128 esprf12a esprf12c esprf12e 
-         esprf130 esprf132 esprf134 esprf136 esprf138 esprf13a esprf13c esprf13e 
-         esprf140 esprf142 esprf144 esprf146 esprf148 esprf14a esprf14c esprf14e 
-         esprf150 esprf152 esprf154 esprf156 esprf158 esprf15a esprf15c esprf15e 
-         esprf160 esprf162 esprf164 esprf166 esprf168 esprf16a esprf16c esprf16e 
-         esprf170 esprf172 esprf174 esprf176 esprf178 esprf17a esprf17c esprf17e 
-         esprf180 esprf182 esprf184 esprf186 esprf188 esprf18a esprf18c esprf18e 
-         esprf190 esprf192 esprf194 esprf196 esprf198 esprf19a esprf19c esprf19e 
-         esprf1a0 esprf1a2 esprf1a4 esprf1a6 esprf1a8 esprf1aa esprf1ac esprf1ae 
-         esprf1b0 esprf1b2 esprf1b4 esprf1b6 esprf1b8 esprf1ba esprf1bc esprf1be 
-         esprf1c0 esprf1c2 esprf1c4 esprf1c6 esprf1c8 esprf1ca esprf1cc esprf1ce 
-         esprf1d0 esprf1d2 esprf1d4 esprf1d6 esprf1d8 esprf1da esprf1dc esprf1de 
-         esprf1e0 esprf1e2 esprf1e4 esprf1e6 esprf1e8 esprf1ea esprf1ec esprf1ee 
+       [ esprf000 esprf002 esprf004 esprf006 esprf008 esprf00a esprf00c esprf00e
+         esprf010 esprf012 esprf014 esprf016 esprf018 esprf01a esprf01c esprf01e
+         esprf020 esprf022 esprf024 esprf026 esprf028 esprf02a esprf02c esprf02e
+         esprf030 esprf032 esprf034 esprf036 esprf038 esprf03a esprf03c esprf03e
+         esprf040 esprf042 esprf044 esprf046 esprf048 esprf04a esprf04c esprf04e
+         esprf050 esprf052 esprf054 esprf056 esprf058 esprf05a esprf05c esprf05e
+         esprf060 esprf062 esprf064 esprf066 esprf068 esprf06a esprf06c esprf06e
+         esprf070 esprf072 esprf074 esprf076 esprf078 esprf07a esprf07c esprf07e
+         esprf080 esprf082 esprf084 esprf086 esprf088 esprf08a esprf08c esprf08e
+         esprf090 esprf092 esprf094 esprf096 esprf098 esprf09a esprf09c esprf09e
+         esprf0a0 esprf0a2 esprf0a4 esprf0a6 esprf0a8 esprf0aa esprf0ac esprf0ae
+         esprf0b0 esprf0b2 esprf0b4 esprf0b6 esprf0b8 esprf0ba esprf0bc esprf0be
+         esprf0c0 esprf0c2 esprf0c4 esprf0c6 esprf0c8 esprf0ca esprf0cc esprf0ce
+         esprf0d0 esprf0d2 esprf0d4 esprf0d6 esprf0d8 esprf0da esprf0dc esprf0de
+         esprf0e0 esprf0e2 esprf0e4 esprf0e6 esprf0e8 esprf0ea esprf0ec esprf0ee
+         esprf0f0 esprf0f2 esprf0f4 esprf0f6 esprf0f8 esprf0fa esprf0fc esprf0fe
+         esprf100 esprf102 esprf104 esprf106 esprf108 esprf10a esprf10c esprf10e
+         esprf110 esprf112 esprf114 esprf116 esprf118 esprf11a esprf11c esprf11e
+         esprf120 esprf122 esprf124 esprf126 esprf128 esprf12a esprf12c esprf12e
+         esprf130 esprf132 esprf134 esprf136 esprf138 esprf13a esprf13c esprf13e
+         esprf140 esprf142 esprf144 esprf146 esprf148 esprf14a esprf14c esprf14e
+         esprf150 esprf152 esprf154 esprf156 esprf158 esprf15a esprf15c esprf15e
+         esprf160 esprf162 esprf164 esprf166 esprf168 esprf16a esprf16c esprf16e
+         esprf170 esprf172 esprf174 esprf176 esprf178 esprf17a esprf17c esprf17e
+         esprf180 esprf182 esprf184 esprf186 esprf188 esprf18a esprf18c esprf18e
+         esprf190 esprf192 esprf194 esprf196 esprf198 esprf19a esprf19c esprf19e
+         esprf1a0 esprf1a2 esprf1a4 esprf1a6 esprf1a8 esprf1aa esprf1ac esprf1ae
+         esprf1b0 esprf1b2 esprf1b4 esprf1b6 esprf1b8 esprf1ba esprf1bc esprf1be
+         esprf1c0 esprf1c2 esprf1c4 esprf1c6 esprf1c8 esprf1ca esprf1cc esprf1ce
+         esprf1d0 esprf1d2 esprf1d4 esprf1d6 esprf1d8 esprf1da esprf1dc esprf1de
+         esprf1e0 esprf1e2 esprf1e4 esprf1e6 esprf1e8 esprf1ea esprf1ec esprf1ee
          esprf1f0 esprf1f2 esprf1f4 esprf1f6 esprf1f8 esprf1fa esprf1fc esprf1fe ];
 
 
@@ -166,7 +166,7 @@ define token instr(16)
 	rb1215 = (12,15)
 	r0809  = (8,9)
 	rb0809 = (8,9)
-	
+
 ;
 define token instr2(16)
 	op1622  = (0,6)
@@ -203,71 +203,71 @@ attach variables [ rb0811 rb1215 ]
 attach variables [ rb0809 ]
 	[ RL0 RH0 RL1 RH1 ];
 
-attach variables [ sfr0815 ] 
+attach variables [ sfr0815 ]
        [ DPP0    DPP1    DPP2    DPP3    CSP     sprfe0a MDH     MDL
-         CP      SP      STKOV   STKUN   CPUCON1 CPUCON2 sprfe1c sprfe1e 
-         sprfe20 sprfe22 sprfe24 sprfe26 sprfe28 sprfe2a sprfe2c sprfe2e 
-         sprfe30 sprfe32 sprfe34 sprfe36 sprfe38 sprfe3a sprfe3c sprfe3e 
-         sprfe40 sprfe42 sprfe44 sprfe46 sprfe48 sprfe4a sprfe4c sprfe4e 
-         sprfe50 sprfe52 sprfe54 sprfe56 sprfe58 sprfe5a sprfe5c sprfe5e 
-         sprfe60 sprfe62 sprfe64 sprfe66 sprfe68 sprfe6a sprfe6c sprfe6e 
-         sprfe70 sprfe72 sprfe74 sprfe76 sprfe78 sprfe7a sprfe7c sprfe7e 
-         sprfe80 sprfe82 sprfe84 sprfe86 sprfe88 sprfe8a sprfe8c sprfe8e 
-         sprfe90 sprfe92 sprfe94 sprfe96 sprfe98 sprfe9a sprfe9c sprfe9e 
-         sprfea0 sprfea2 sprfea4 sprfea6 sprfea8 sprfeaa sprfeac sprfeae 
-         sprfeb0 sprfeb2 sprfeb4 sprfeb6 sprfeb8 sprfeba sprfebc sprfebe 
-         sprfec0 sprfec2 sprfec4 sprfec6 sprfec8 sprfeca sprfecc sprfece 
-         sprfed0 sprfed2 sprfed4 sprfed6 sprfed8 sprfeda sprfedc sprfede 
-         sprfee0 sprfee2 sprfee4 sprfee6 sprfee8 sprfeea sprfeec sprfeee 
-         sprfef0 sprfef2 sprfef4 sprfef6 sprfef8 sprfefa sprfefc sprfefe 
-         sprff00 sprff02 sprff04 sprff06 sprff08 sprff0a sprff0c sprff0e 
-         PSW     sprff12 sprff14 sprff16 sprff18 sprff1a ZEROS   ONES 
-         sprff20 sprff22 sprff24 sprff26 sprff28 sprff2a sprff2c sprff2e 
-         sprff30 sprff32 sprff34 sprff36 sprff38 sprff3a sprff3c sprff3e 
-         sprff40 sprff42 sprff44 sprff46 sprff48 sprff4a sprff4c sprff4e 
-         sprff50 sprff52 sprff54 sprff56 sprff58 sprff5a sprff5c sprff5e 
-         sprff60 sprff62 sprff64 sprff66 sprff68 sprff6a sprff6c sprff6e 
-         sprff70 sprff72 sprff74 sprff76 sprff78 sprff7a sprff7c sprff7e 
-         sprff80 sprff82 sprff84 sprff86 sprff88 sprff8a sprff8c sprff8e 
-         sprff90 sprff92 sprff94 sprff96 sprff98 sprff9a sprff9c sprff9e 
-         sprffa0 sprffa2 sprffa4 sprffa6 sprffa8 sprffaa sprffac sprffae 
-         sprffb0 sprffb2 sprffb4 sprffb6 sprffb8 sprffba sprffbc sprffbe 
-         sprffc0 sprffc2 sprffc4 sprffc6 sprffc8 sprffca sprffcc sprffce 
-         sprffd0 sprffd2 sprffd4 sprffd6 sprffd8 sprffda sprffdc sprffde 
-         sprffe0 sprffe2 sprffe4 sprffe6 sprffe8 sprffea sprffec sprffee 
+         CP      SP      STKOV   STKUN   CPUCON1 CPUCON2 sprfe1c sprfe1e
+         sprfe20 sprfe22 sprfe24 sprfe26 sprfe28 sprfe2a sprfe2c sprfe2e
+         sprfe30 sprfe32 sprfe34 sprfe36 sprfe38 sprfe3a sprfe3c sprfe3e
+         sprfe40 sprfe42 sprfe44 sprfe46 sprfe48 sprfe4a sprfe4c sprfe4e
+         sprfe50 sprfe52 sprfe54 sprfe56 sprfe58 sprfe5a sprfe5c sprfe5e
+         sprfe60 sprfe62 sprfe64 sprfe66 sprfe68 sprfe6a sprfe6c sprfe6e
+         sprfe70 sprfe72 sprfe74 sprfe76 sprfe78 sprfe7a sprfe7c sprfe7e
+         sprfe80 sprfe82 sprfe84 sprfe86 sprfe88 sprfe8a sprfe8c sprfe8e
+         sprfe90 sprfe92 sprfe94 sprfe96 sprfe98 sprfe9a sprfe9c sprfe9e
+         sprfea0 sprfea2 sprfea4 sprfea6 sprfea8 sprfeaa sprfeac sprfeae
+         sprfeb0 sprfeb2 sprfeb4 sprfeb6 sprfeb8 sprfeba sprfebc sprfebe
+         sprfec0 sprfec2 sprfec4 sprfec6 sprfec8 sprfeca sprfecc sprfece
+         sprfed0 sprfed2 sprfed4 sprfed6 sprfed8 sprfeda sprfedc sprfede
+         sprfee0 sprfee2 sprfee4 sprfee6 sprfee8 sprfeea sprfeec sprfeee
+         sprfef0 sprfef2 sprfef4 sprfef6 sprfef8 sprfefa sprfefc sprfefe
+         sprff00 sprff02 sprff04 sprff06 sprff08 sprff0a sprff0c sprff0e
+         PSW     sprff12 sprff14 sprff16 sprff18 sprff1a ZEROS   ONES
+         sprff20 sprff22 sprff24 sprff26 sprff28 sprff2a sprff2c sprff2e
+         sprff30 sprff32 sprff34 sprff36 sprff38 sprff3a sprff3c sprff3e
+         sprff40 sprff42 sprff44 sprff46 sprff48 sprff4a sprff4c sprff4e
+         sprff50 sprff52 sprff54 sprff56 sprff58 sprff5a sprff5c sprff5e
+         sprff60 sprff62 sprff64 sprff66 sprff68 sprff6a sprff6c sprff6e
+         sprff70 sprff72 sprff74 sprff76 sprff78 sprff7a sprff7c sprff7e
+         sprff80 sprff82 sprff84 sprff86 sprff88 sprff8a sprff8c sprff8e
+         sprff90 sprff92 sprff94 sprff96 sprff98 sprff9a sprff9c sprff9e
+         sprffa0 sprffa2 sprffa4 sprffa6 sprffa8 sprffaa sprffac sprffae
+         sprffb0 sprffb2 sprffb4 sprffb6 sprffb8 sprffba sprffbc sprffbe
+         sprffc0 sprffc2 sprffc4 sprffc6 sprffc8 sprffca sprffcc sprffce
+         sprffd0 sprffd2 sprffd4 sprffd6 sprffd8 sprffda sprffdc sprffde
+         sprffe0 sprffe2 sprffe4 sprffe6 sprffe8 sprffea sprffec sprffee
          sprfff0 sprfff2 sprfff4 sprfff6 sprfff8 sprfffa sprfffc sprfffe ];
 attach variables [ esfr0815 ]
-       [ esprf000 esprf002 esprf004 esprf006 esprf008 esprf00a esprf00c esprf00e 
-         esprf010 esprf012 esprf014 esprf016 esprf018 esprf01a esprf01c esprf01e 
-         esprf020 esprf022 esprf024 esprf026 esprf028 esprf02a esprf02c esprf02e 
-         esprf030 esprf032 esprf034 esprf036 esprf038 esprf03a esprf03c esprf03e 
-         esprf040 esprf042 esprf044 esprf046 esprf048 esprf04a esprf04c esprf04e 
-         esprf050 esprf052 esprf054 esprf056 esprf058 esprf05a esprf05c esprf05e 
-         esprf060 esprf062 esprf064 esprf066 esprf068 esprf06a esprf06c esprf06e 
-         esprf070 esprf072 esprf074 esprf076 esprf078 esprf07a esprf07c esprf07e 
-         esprf080 esprf082 esprf084 esprf086 esprf088 esprf08a esprf08c esprf08e 
-         esprf090 esprf092 esprf094 esprf096 esprf098 esprf09a esprf09c esprf09e 
-         esprf0a0 esprf0a2 esprf0a4 esprf0a6 esprf0a8 esprf0aa esprf0ac esprf0ae 
-         esprf0b0 esprf0b2 esprf0b4 esprf0b6 esprf0b8 esprf0ba esprf0bc esprf0be 
-         esprf0c0 esprf0c2 esprf0c4 esprf0c6 esprf0c8 esprf0ca esprf0cc esprf0ce 
-         esprf0d0 esprf0d2 esprf0d4 esprf0d6 esprf0d8 esprf0da esprf0dc esprf0de 
-         esprf0e0 esprf0e2 esprf0e4 esprf0e6 esprf0e8 esprf0ea esprf0ec esprf0ee 
-         esprf0f0 esprf0f2 esprf0f4 esprf0f6 esprf0f8 esprf0fa esprf0fc esprf0fe 
-         esprf100 esprf102 esprf104 esprf106 esprf108 esprf10a esprf10c esprf10e 
-         esprf110 esprf112 esprf114 esprf116 esprf118 esprf11a esprf11c esprf11e 
-         esprf120 esprf122 esprf124 esprf126 esprf128 esprf12a esprf12c esprf12e 
-         esprf130 esprf132 esprf134 esprf136 esprf138 esprf13a esprf13c esprf13e 
-         esprf140 esprf142 esprf144 esprf146 esprf148 esprf14a esprf14c esprf14e 
-         esprf150 esprf152 esprf154 esprf156 esprf158 esprf15a esprf15c esprf15e 
-         esprf160 esprf162 esprf164 esprf166 esprf168 esprf16a esprf16c esprf16e 
-         esprf170 esprf172 esprf174 esprf176 esprf178 esprf17a esprf17c esprf17e 
-         esprf180 esprf182 esprf184 esprf186 esprf188 esprf18a esprf18c esprf18e 
-         esprf190 esprf192 esprf194 esprf196 esprf198 esprf19a esprf19c esprf19e 
-         esprf1a0 esprf1a2 esprf1a4 esprf1a6 esprf1a8 esprf1aa esprf1ac esprf1ae 
-         esprf1b0 esprf1b2 esprf1b4 esprf1b6 esprf1b8 esprf1ba esprf1bc esprf1be 
-         esprf1c0 esprf1c2 esprf1c4 esprf1c6 esprf1c8 esprf1ca esprf1cc esprf1ce 
-         esprf1d0 esprf1d2 esprf1d4 esprf1d6 esprf1d8 esprf1da esprf1dc esprf1de 
-         esprf1e0 esprf1e2 esprf1e4 esprf1e6 esprf1e8 esprf1ea esprf1ec esprf1ee 
+       [ esprf000 esprf002 esprf004 esprf006 esprf008 esprf00a esprf00c esprf00e
+         esprf010 esprf012 esprf014 esprf016 esprf018 esprf01a esprf01c esprf01e
+         esprf020 esprf022 esprf024 esprf026 esprf028 esprf02a esprf02c esprf02e
+         esprf030 esprf032 esprf034 esprf036 esprf038 esprf03a esprf03c esprf03e
+         esprf040 esprf042 esprf044 esprf046 esprf048 esprf04a esprf04c esprf04e
+         esprf050 esprf052 esprf054 esprf056 esprf058 esprf05a esprf05c esprf05e
+         esprf060 esprf062 esprf064 esprf066 esprf068 esprf06a esprf06c esprf06e
+         esprf070 esprf072 esprf074 esprf076 esprf078 esprf07a esprf07c esprf07e
+         esprf080 esprf082 esprf084 esprf086 esprf088 esprf08a esprf08c esprf08e
+         esprf090 esprf092 esprf094 esprf096 esprf098 esprf09a esprf09c esprf09e
+         esprf0a0 esprf0a2 esprf0a4 esprf0a6 esprf0a8 esprf0aa esprf0ac esprf0ae
+         esprf0b0 esprf0b2 esprf0b4 esprf0b6 esprf0b8 esprf0ba esprf0bc esprf0be
+         esprf0c0 esprf0c2 esprf0c4 esprf0c6 esprf0c8 esprf0ca esprf0cc esprf0ce
+         esprf0d0 esprf0d2 esprf0d4 esprf0d6 esprf0d8 esprf0da esprf0dc esprf0de
+         esprf0e0 esprf0e2 esprf0e4 esprf0e6 esprf0e8 esprf0ea esprf0ec esprf0ee
+         esprf0f0 esprf0f2 esprf0f4 esprf0f6 esprf0f8 esprf0fa esprf0fc esprf0fe
+         esprf100 esprf102 esprf104 esprf106 esprf108 esprf10a esprf10c esprf10e
+         esprf110 esprf112 esprf114 esprf116 esprf118 esprf11a esprf11c esprf11e
+         esprf120 esprf122 esprf124 esprf126 esprf128 esprf12a esprf12c esprf12e
+         esprf130 esprf132 esprf134 esprf136 esprf138 esprf13a esprf13c esprf13e
+         esprf140 esprf142 esprf144 esprf146 esprf148 esprf14a esprf14c esprf14e
+         esprf150 esprf152 esprf154 esprf156 esprf158 esprf15a esprf15c esprf15e
+         esprf160 esprf162 esprf164 esprf166 esprf168 esprf16a esprf16c esprf16e
+         esprf170 esprf172 esprf174 esprf176 esprf178 esprf17a esprf17c esprf17e
+         esprf180 esprf182 esprf184 esprf186 esprf188 esprf18a esprf18c esprf18e
+         esprf190 esprf192 esprf194 esprf196 esprf198 esprf19a esprf19c esprf19e
+         esprf1a0 esprf1a2 esprf1a4 esprf1a6 esprf1a8 esprf1aa esprf1ac esprf1ae
+         esprf1b0 esprf1b2 esprf1b4 esprf1b6 esprf1b8 esprf1ba esprf1bc esprf1be
+         esprf1c0 esprf1c2 esprf1c4 esprf1c6 esprf1c8 esprf1ca esprf1cc esprf1ce
+         esprf1d0 esprf1d2 esprf1d4 esprf1d6 esprf1d8 esprf1da esprf1dc esprf1de
+         esprf1e0 esprf1e2 esprf1e4 esprf1e6 esprf1e8 esprf1ea esprf1ec esprf1ee
          esprf1f0 esprf1f2 esprf1f4 esprf1f6 esprf1f8 esprf1fa esprf1fc esprf1fe ];
 
 
@@ -378,7 +378,7 @@ reg0815_w: esfr0815     is esfr0815 & op1215<0xF & extR=1  { export esfr0815; }
 reg0815_w: r0811        is r0811    & op1215=0xF   	       { export r0811; }
 
 reg0815_b: sfr0815_     is sfr0815_ & op1215<0xF & extR=0  { local tmp:1 = sfr0815_:1; export tmp; }
-reg0815_b: esfr0815     is esfr0815 & op1215<0xF & extR=1  { local tmp:1 = esfr0815:1; export tmp; } 
+reg0815_b: esfr0815     is esfr0815 & op1215<0xF & extR=1  { local tmp:1 = esfr0815:1; export tmp; }
 reg0815_b: rb0811       is rb0811   & op1215=0xF   	       { export rb0811; }
 
 qq0815: addr	is op15=0 & op0815 [ addr = 0xFD00 + 2 * op0815; ]				  { export *:2 addr; }
@@ -961,72 +961,288 @@ define pcodeop __watchdog_enable;
 	__watchdog_enable();
 }
 
-macro ext_p(page, irange) {
-#	extP = 1;
-#	extOffset = page << 14;
-	delayslot(irange);
-#	extP = 0;
+# #pag , #irang2		D7 :0100-0 pp 0:00pp
+:extp #pag, #irang2 is op0007=0xD7 & irang2 & u1213=0 & op1415=1 ; pag & op2831=0 {
+	#	extP = 1;
+	#	extOffset = page << 14;
+		delayslot(1);
+	#	extP = 0;
 }
-macro ext_pr(page, irange) {
-#	extP = 1; extR = 1;
-#	extOffset = page << 14;
-	delayslot(irange);
-#	extP = 0; extR = 0;
+
+# #pag , #irang2		D7 :0101-0 pp 0:00pp
+:extp #pag, #irang2 is op0007=0xD7 & irang2 & u1213=1 & op1415=1 ; pag & op2831=0 {
+	#	extP = 1;
+	#	extOffset = page << 14;
+		delayslot(2);
+	#	extP = 0;
 }
-macro ext_r(irange) {
-#	extR = 1;
-	delayslot(irange);
-#	extR = 0;
+
+# #pag , #irang2		D7 :0110-0 pp 0:00pp
+:extp #pag, #irang2 is op0007=0xD7 & irang2 & u1213=2 & op1415=1 ; pag & op2831=0 {
+	#	extP = 1;
+	#	extOffset = page << 14;
+		delayslot(3);
+	#	extP = 0;
 }
-macro ext_s(segment, irange) {
-#	extP = 1;
-#	extOffset = segment << 16;
-	delayslot(irange);
-#	extP = 0;
+
+# #pag , #irang2		D7 :0111-0 pp 0:00pp
+:extp #pag, #irang2 is op0007=0xD7 & irang2 & u1213=3 & op1415=1 ; pag & op2831=0 {
+	#	extP = 1;
+	#	extOffset = page << 14;
+		delayslot(4);
+	#	extP = 0;
 }
-macro ext_sr(segment, irange) {
-#	extP = 1; extR = 1;
-#	extOffset = segment << 16;
-	delayslot(irange);
-#	extP = 0; extR = 0;
+
+# Rw m , #irang2		DC :0100-m
+:extp Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=0 & op1415=1 {
+	#	extP = 1;
+	#	extOffset = Rwm0811 << 14;
+		delayslot(1);
+	#	extP = 0;
 }
-# #pag , #irang2		D7 :01##-0 pp 0:00pp
-:extp #pag, #irang2 is op0007=0xD7 & irang2 & op1415=1 ; pag & op2831=0 {
-	ext_p(pag, irang2);
+
+# Rw m , #irang2		DC :0101-m
+:extp Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=1 & op1415=1 {
+	#	extP = 1;
+	#	extOffset = Rwm0811 << 14;
+		delayslot(2);
+	#	extP = 0;
 }
-# Rw m , #irang2		DC :01##-m
-:extp Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & op1415=1 {
-	ext_p(Rwm0811, irang2);
+
+# Rw m , #irang2		DC :0110-m
+:extp Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=2 & op1415=1 {
+	#	extP = 1;
+	#	extOffset = Rwm0811 << 14;
+		delayslot(3);
+	#	extP = 0;
 }
-# #pag , #irang2		D7 :01##-0 pp 0:00pp
-:extpr #pag, #irang2 is op0007=0xD7 & irang2 & op1415=3 ; pag & op2831=0 {
-	ext_pr(pag, irang2);
+
+# Rw m , #irang2		DC :0111-m
+:extp Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=3 & op1415=1 {
+	#	extP = 1;
+	#	extOffset = Rwm0811 << 14;
+		delayslot(4);
+	#	extP = 0;
 }
-# Rw m , #irang2		DC :11##-m
-:extpr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & op1415=3 {
-	ext_pr(Rwm0811, irang2);
+
+# #pag , #irang2		D7 :0100-0 pp 0:00pp
+:extpr #pag, #irang2 is op0007=0xD7 & irang2 & u1213=0 & op1415=3 ; pag & op2831=0 {
+	#	extP = 1; extR = 1;
+	#	extOffset = page << 14;
+	delayslot(1);
+	#	extP = 0; extR = 0;
 }
-# #irang2			D1 :10##-0
-:extr #irang2 is op0007=0xD1 & op0811=0 & irang2 & op1415=2 {
-	ext_r(irang2);
+
+# #pag , #irang2		D7 :0101-0 pp 0:00pp
+:extpr #pag, #irang2 is op0007=0xD7 & irang2 & u1213=1 & op1415=3 ; pag & op2831=0 {
+	#	extP = 1; extR = 1;
+	#	extOffset = page << 14;
+	delayslot(2);
+	#	extP = 0; extR = 0;
+}
+
+# #pag , #irang2		D7 :0110-0 pp 0:00pp
+:extpr #pag, #irang2 is op0007=0xD7 & irang2 & u1213=2 & op1415=3 ; pag & op2831=0 {
+	#	extP = 1; extR = 1;
+	#	extOffset = page << 14;
+	delayslot(3);
+	#	extP = 0; extR = 0;
+}
+
+# #pag , #irang2		D7 :0111-0 pp 0:00pp
+:extpr #pag, #irang2 is op0007=0xD7 & irang2 & u1213=3 & op1415=3 ; pag & op2831=0 {
+	#	extP = 1; extR = 1;
+	#	extOffset = page << 14;
+	delayslot(4);
+	#	extP = 0; extR = 0;
+}
+
+# Rw m , #irang2		DC :1100-m
+:extpr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=0 & op1415=3 {
+	#	extP = 1; extR = 1;
+	#	extOffset = Rwm0811 << 14;
+	delayslot(1);
+	#	extP = 0; extR = 0;
+}
+
+# Rw m , #irang2		DC :1101-m
+:extpr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=1 & op1415=3 {
+	#	extP = 1; extR = 1;
+	#	extOffset = Rwm0811 << 14;
+	delayslot(2);
+	#	extP = 0; extR = 0;
+}
+
+# Rw m , #irang2		DC :1110-m
+:extpr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=2 & op1415=3 {
+	#	extP = 1; extR = 1;
+	#	extOffset = Rwm0811 << 14;
+	delayslot(3);
+	#	extP = 0; extR = 0;
+}
+
+# Rw m , #irang2		DC :1111-m
+:extpr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=3 & op1415=3 {
+	#	extP = 1; extR = 1;
+	#	extOffset = Rwm0811 << 14;
+	delayslot(4);
+	#	extP = 0; extR = 0;
+}
+
+# #irang2			D1 :1000-0
+:extr #irang2 is op0007=0xD1 & op0811=0 & irang2 & u1213=0 & op1415=2 {
+	#	extR = 1;
+	delayslot(1);
+	#	extR = 0;
+}
+
+# #irang2			D1 :1001-0
+:extr #irang2 is op0007=0xD1 & op0811=0 & irang2 & u1213=1 & op1415=2 {
+	#	extR = 1;
+	delayslot(2);
+	#	extR = 0;
+}
+
+# #irang2			D1 :1010-0
+:extr #irang2 is op0007=0xD1 & op0811=0 & irang2 & u1213=2 & op1415=2 {
+	#	extR = 1;
+	delayslot(3);
+	#	extR = 0;
+}
+
+# #irang2			D1 :1011-0
+:extr #irang2 is op0007=0xD1 & op0811=0 & irang2 & u1213=3 & op1415=2 {
+	#	extR = 1;
+	delayslot(4);
+	#	extR = 0;
 }
 
 # #seg , #irang2		D7 :00##-0 SS 00
-:exts #seg, #irang2 is op0007=0xD7 & irang2 & op1415=0 ; seg & op2431=0 {
-	ext_s(seg, irang2);
-}
-# Rw m , #irang2		DC :00##-m
-:exts Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & op1415=0 {
-	ext_s(Rwm0811, irang2);
+:exts #seg, #irang2 is op0007=0xD7 & irang2 & u1213=0 & op1415=0 ; seg & op2431=0 {
+	#	extP = 1;
+	#	extOffset = seg << 16;
+		delayslot(1);
+	#	extP = 0;
 }
 
-# #seg , #irang2		D7 :10##-0 SS 00
-:extsr #seg, #irang2 is op0007=0xD7 & irang2 & op1415=2 ; seg & op2431=0 {
-	ext_sr(seg, irang2);
+# #seg , #irang2		D7 :00##-0 SS 00
+:exts #seg, #irang2 is op0007=0xD7 & irang2 & u1213=1 & op1415=0 ; seg & op2431=0 {
+	#	extP = 1;
+	#	extOffset = seg << 16;
+		delayslot(2);
+	#	extP = 0;
 }
-# Rw m , #irang2		DC :10##-m
-:extsr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & op1415=2 {
-	ext_sr(Rwm0811, irang2);
+
+# #seg , #irang2		D7 :00##-0 SS 00
+:exts #seg, #irang2 is op0007=0xD7 & irang2 & u1213=2 & op1415=0 ; seg & op2431=0 {
+	#	extP = 1;
+	#	extOffset = seg << 16;
+		delayslot(3);
+	#	extP = 0;
+}
+
+# #seg , #irang2		D7 :00##-0 SS 00
+:exts #seg, #irang2 is op0007=0xD7 & irang2 & u1213=3 & op1415=0 ; seg & op2431=0 {
+	#	extP = 1;
+	#	extOffset = seg << 16;
+		delayslot(4);
+	#	extP = 0;
+}
+
+# Rw m , #irang2		DC :0000-m
+:exts Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=0 & op1415=0 {
+	#	extP = 1;
+	#	extOffset = Rwm0811 << 16;
+		delayslot(1);
+	#	extP = 0;
+}
+
+# Rw m , #irang2		DC :0001-m
+:exts Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=1 & op1415=0 {
+	#	extP = 1;
+	#	extOffset = Rwm0811 << 16;
+		delayslot(2);
+	#	extP = 0;
+}
+
+# Rw m , #irang2		DC :0010-m
+:exts Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=2 & op1415=0 {
+	#	extP = 1;
+	#	extOffset = Rwm0811 << 16;
+		delayslot(3);
+	#	extP = 0;
+}
+
+# Rw m , #irang2		DC :0011-m
+:exts Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=3 & op1415=0 {
+	#	extP = 1;
+	#	extOffset = Rwm0811 << 16;
+		delayslot(4);
+	#	extP = 0;
+}
+
+# #seg , #irang2		D7 :1000-0 SS 00
+:extsr #seg, #irang2 is op0007=0xD7 & irang2 & u1213=0 & op1415=2 ; seg & op2431=0 {
+	#	extP = 1; extR = 1;
+	#	extOffset = seg << 16;
+		delayslot(1);
+	#	extP = 0; extR = 0;
+}
+
+# #seg , #irang2		D7 :1001-0 SS 00
+:extsr #seg, #irang2 is op0007=0xD7 & irang2 & u1213=1 & op1415=2 ; seg & op2431=0 {
+	#	extP = 1; extR = 1;
+	#	extOffset = seg << 16;
+		delayslot(2);
+	#	extP = 0; extR = 0;
+}
+
+# #seg , #irang2		D7 :1010-0 SS 00
+:extsr #seg, #irang2 is op0007=0xD7 & irang2 & u1213=2 & op1415=2 ; seg & op2431=0 {
+	#	extP = 1; extR = 1;
+	#	extOffset = seg << 16;
+		delayslot(3);
+	#	extP = 0; extR = 0;
+}
+
+# #seg , #irang2		D7 :1011-0 SS 00
+:extsr #seg, #irang2 is op0007=0xD7 & irang2 & u1213=3 & op1415=2 ; seg & op2431=0 {
+	#	extP = 1; extR = 1;
+	#	extOffset = seg << 16;
+		delayslot(4);
+	#	extP = 0; extR = 0;
+}
+
+# Rw m , #irang2		DC :1000-m
+:extsr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=0 & op1415=2 {
+	#	extP = 1; extR = 1;
+	#	extOffset = Rwm0811 << 16;
+		delayslot(1);
+	#	extP = 0; extR = 0;
+}
+
+# Rw m , #irang2		DC :1001-m
+:extsr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=1 & op1415=2 {
+	#	extP = 1; extR = 1;
+	#	extOffset = Rwm0811 << 16;
+		delayslot(2);
+	#	extP = 0; extR = 0;
+}
+
+# Rw m , #irang2		DC :1010-m
+:extsr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=2 & op1415=2 {
+	#	extP = 1; extR = 1;
+	#	extOffset = Rwm0811 << 16;
+		delayslot(3);
+	#	extP = 0; extR = 0;
+}
+
+# Rw m , #irang2		DC :1011-m
+:extsr Rwm0811, #irang2 is op0007=0xDC & Rwm0811 & irang2 & u1213=3 & op1415=2 {
+	#	extP = 1; extR = 1;
+	#	extOffset = Rwm0811 << 16;
+		delayslot(4);
+	#	extP = 0; extR = 0;
 }
 
 
@@ -1055,7 +1271,7 @@ define pcodeop __idle;
 }
 
 # xcc , caddr			EA c0 MM MM
-:jmpa xcc1115, caddr1631 is op0007=0xEA & xcc1115; caddr1631 { 
+:jmpa xcc1115, caddr1631 is op0007=0xEA & xcc1115; caddr1631 {
 	if (xcc1115 == 0) goto inst_next;
 	IP = caddr1631;
 	goto [IP];
@@ -1478,13 +1694,13 @@ macro or_b(a, b) {
 :prior Rwn1215, Rwm0811 is op0007=0x2B & Rwm0811 & Rwn1215 {
 	local tmp = Rwm0811;
 	local count:2 = 0;
-	
+
 	setE_b(0:1);
 	setNotZ(tmp);
 	setV(0:1);
 	setC(0:1);
 	setN(0:1);
-	
+
 	if (tmp == 0) goto <exit>;
 	<loop>
 		if ((tmp & 0x8000) != 0) goto <exit>;
